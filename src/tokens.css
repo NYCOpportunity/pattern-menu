@@ -1,0 +1,34 @@
+:root {
+  --o-menu-grid-base: 8px;
+  --o-menu-display: block;
+  --o-menu-width: 80vw;
+  --o-menu-z-index: 0;
+
+  --o-menu-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.15);
+
+  --o-menu-open-transition-duration: .5s;
+  --o-menu-open-transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+
+  --o-menu-close-transition-duration: .1666666667s;
+  --o-menu-close-transition-timing-function: linear;
+}
+
+@media screen and (max-width: 1111.98px) {
+  :root {
+    --o-menu-z-index: 1020;
+  }
+}
+
+/* The minimum width for the mobile nav to appear */
+@media screen and (min-width: 1112px) {
+  :root {
+    --o-menu-display: none;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    --o-menu-open-transition-duration: 0;
+    --o-menu-close-transition-duration: 0;
+  }
+}

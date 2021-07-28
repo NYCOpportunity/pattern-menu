@@ -1,0 +1,60 @@
+/**
+ * Menu
+ */
+
+.o-menu {
+  padding: calc(var(--o-menu-grid-base) * 3) calc(var(--o-menu-grid-base) * 2);
+  width: var(--o-menu-width);
+  box-shadow: var(--o-menu-shadow);
+
+  display: var(--o-menu-display);
+  z-index: var(--o-menu-z-index);
+}
+
+.o-menu__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.o-menu__nav-item {
+  display: block;
+  text-align: start;
+  justify-content: flex-start;
+  padding: calc(var(--o-menu-grid-base) * 2) 0;
+}
+
+/* Animation */
+.o-menu-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0
+}
+
+.o-menu-fixed {
+  right: calc(-1 * var(--o-menu-width));
+
+  transition-duration: var(--o-menu-open-transition-duration);
+  transition-timing-function: var(--o-menu-open-transition-timing-function)
+}
+
+*:dir(rtl) .o-menu-fixed {
+  left: calc(-1 * var(--o-menu-width))
+}
+
+.o-menu-fixed.hidden {
+  box-shadow: none !important;
+  display: initial !important;
+
+  transform: translateX(0);
+  transition-duration: var(--o-menu-close-transition-duration);
+  transition-timing-function: var(--o-menu-close-transition-timing-function)
+}
+
+.o-menu-fixed.active {
+  transform: translateX(-100%)
+}
+
+*:dir(rtl) .o-menu-fixed.active {
+  transform: translateX(100%)
+}
