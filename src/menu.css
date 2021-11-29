@@ -3,7 +3,7 @@
  */
 
 .o-menu {
-  padding: calc(var(--o-menu-grid-base) * 3) calc(var(--o-menu-grid-base) * 2);
+  padding: calc(var(--o-menu-grid-base) * 3);
   width: var(--o-menu-width);
   box-shadow: var(--o-menu-shadow);
 
@@ -19,6 +19,7 @@
 
 .o-menu__nav-item {
   display: block;
+  width: 100%;
   text-align: start;
   justify-content: flex-start;
   padding: calc(var(--o-menu-grid-base) * 2) 0;
@@ -44,7 +45,7 @@
 
 .o-menu-fixed.hidden {
   box-shadow: none !important;
-  display: initial !important;
+  display: var(--o-menu-display) !important;
 
   transform: translateX(0);
   transition-duration: var(--o-menu-close-transition-duration);

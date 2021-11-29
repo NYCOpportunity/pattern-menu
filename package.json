@@ -11,6 +11,10 @@
   "bugs": {
     "url": "https://github.com/NYCOpportunity/pattern-menu/issues"
   },
+  "scripts": {
+    "version": "git add .",
+    "prepublishOnly": "git push && git push --tags"
+  },
   "homepage": "https://github.com/NYCOpportunity/pattern-menu#readme",
   "dependencies": {
     "@nycopportunity/pttrn-scripts": "^1.0.4"
