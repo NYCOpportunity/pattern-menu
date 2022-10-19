@@ -1,10 +1,16 @@
 :root {
   --o-menu-grid-base: 8px;
-  --o-menu-display: block;
+
+  --o-menu-display: flex;
+  --o-menu-align: center;
+
   --o-menu-width: 80vw;
   --o-menu-z-index: 0;
 
-  --o-menu-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.15);
+  --o-menu-background-color: transparent;
+  --o-menu-material-border: none;
+  --o-menu-material-border-radius: 0px;
+  --o-menu-material-shadow-up: 0 3px 12px 2px rgba(0, 0, 0, 0.15);
 
   --o-menu-open-transition-duration: .5s;
   --o-menu-open-transition-timing-function: cubic-bezier(.23, 1, .32, 1);
