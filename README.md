@@ -1,6 +1,6 @@
 # Menu Pattern
 
-The Menu Pattern is a sliding menu that contains the navigation items that do not fit within the [Navigation Pattern](https://github.com/NYCOpportunity/pattern-navigation) in mobile view ports. It uses the [Patterns Scripts toggle utility](https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/toggle) to achieve the showing and hiding effects. The animation for the sliding uses CSS and will be disabled by devices using the [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) `@media` query.
+The Menu Pattern is a sliding menu that contains the navigation items that do not fit within the [Navigation Pattern](https://github.com/NYCOpportunity/pattern-navigation) in mobile viewports. It uses the [Patterns Scripts toggle utility](https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/toggle) to achieve the showing and hiding effects. The animation for the sliding uses CSS and will be disabled by devices using the [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) `@media` query.
 
 The menu element will be hidden from screen readers using the `aria-hidden` attribute and potentially focusable children will have their tabindex set to `-1` when the modal is hidden. When the menu is opened, focus will shift from the `data-js-menu="open"` trigger to the `data-js-menu="close"` trigger inside the menu. The focus will be trapped, meaning tabbing focus will cycle through elements within the menu.
 

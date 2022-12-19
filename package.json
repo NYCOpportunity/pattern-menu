@@ -1,7 +1,7 @@
 {
   "name": "@nycopportunity/pattern-menu",
-  "version": "1.1.1",
-  "description": "The Menu Pattern is an accessible sliding menu that contains the navigation items that do not fit within the Navigation Pattern in mobile view ports.",
+  "version": "1.1.2",
+  "description": "The Menu Pattern is an accessible sliding menu that contains the navigation items that do not fit within the Navigation Pattern in mobile viewports.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NYCOpportunity/pattern-menu.git"
